@@ -374,6 +374,35 @@ img {
 }
 
 
+.footer {
+	background: #425D2D;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 400px;
+}
+
+.footer-menu-list {
+	display: flex;
+}
+
+.footer-menu-list li {
+	margin-left: 1.5em;
+}
+
+.footer-link {
+	color: #ffc907;
+	text-decoration: none;
+	font-size: 1.1rem;
+	line-height: 2em;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
 
 
 
@@ -486,6 +515,10 @@ img {
 
 	.desert-types-n-order {
 		margin-top: -390px;
+	}
+
+	.footer-menu-list {
+		display: block;
 	}
 
 }
@@ -747,5 +780,17 @@ img {
 @media screen and (max-width: 414px){
 	.desert-types-cards{
 		width: 100%;
+	}
+
+	.footer-container {
+		justify-content: center;
+	}
+
+	.footer-link {
+		line-height: 3em;
+	}
+
+	.footer-logo {
+		display: none;
 	}
 }
