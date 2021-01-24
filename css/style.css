@@ -476,12 +476,12 @@ img {
 /*find-us section*/
 .find-us {
 	padding: 170px 0 250px;
-	font-size: 50px;
+	font-size: 40px;
 	background: url("../img/find-us-bg.jpg") no-repeat center center;
 	background-size: cover;
 }
 
-.main-wrapper {
+.find-us .main-wrapper {
 	position: relative;
 	z-index: 0;
 }
@@ -489,13 +489,15 @@ img {
 .find-us__container {
 	padding: .5em;
 	position: relative;
-	background: white;
+	background: var(--color-2);
+	border-radius: 20px;
 }
 
 .find-us__container::before {
 	content: '';
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
+	border-radius: inherit;
 	z-index: -1;
 	margin: -4px;
 	background: linear-gradient(to bottom, #B97F1A 0%, #FBF4A5 50%, #B97F1A 100%);
@@ -506,7 +508,7 @@ img {
 	line-height: 1.2em;
 	text-decoration: underline;
 	text-align: center;
-	color: var(--color-2);
+	color: white;
 	margin-bottom: 1em;
 }
 
@@ -516,6 +518,7 @@ img {
 	color: var(--color-1);
 	display: flex;
 	justify-content: space-between;
+	align-items: center;	
 	column-gap: 15px;
 }
 
@@ -527,6 +530,10 @@ img {
 
 .find-us__insta span {
 	text-decoration: underline;
+}
+
+.find-us__map {
+	width: 50%;
 }
 
 .find-us__map-img {
@@ -1011,11 +1018,15 @@ img {
 
 	.find-us__contacts {
 		row-gap: .5em;
-		margin-bottom: .5em;
+		margin-bottom: 1em;
 	}
 
 	.find-us__address {
 		order: 3;
+	}
+
+	.find-us__map {
+		width: 80%;
 	}
 
 }
