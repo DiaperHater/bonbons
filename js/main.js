@@ -98,3 +98,23 @@
 
   scrollTo();
 })();
+
+
+
+
+// menu section items
+const menuSection = document.querySelector('.our-menu');
+const menuSectionItems = document.querySelectorAll('.js-our-menu__item');
+
+menuSectionItems.forEach((item)=>{
+  item.addEventListener('click', ()=>{
+    if(!item.classList.contains('active')){
+      item.classList.add('active');
+      document.querySelector('body').style.overflow = 'hidden';
+    } else {
+      item.classList.remove('active');
+      document.querySelector('body').style.overflow = 'auto';
+    }
+    
+  });
+});
