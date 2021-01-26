@@ -118,3 +118,16 @@ menuSectionItems.forEach((item)=>{
     
   });
 });
+
+
+//Find Us Map
+const map = document.querySelector('.find-us__map');
+map.addEventListener('click', ()=>{
+  if(!map.classList.contains('active')){
+      map.classList.add('active');
+      document.querySelector('body').style.overflow = 'hidden';
+    } else {
+      map.classList.remove('active');
+      document.querySelector('body').style.overflow = 'auto';
+    }
+});
